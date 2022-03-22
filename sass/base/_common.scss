@@ -1,0 +1,56 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+body {
+  color: $primary-text-color;
+  background-color: $primary-white-color;
+
+  font-family: Roboto, sans-serif;
+  font-size: $primary-font-size;
+  letter-spacing: $primary-letter-spacing;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.link {
+  display: block;
+  text-decoration: none;
+  color: $primary-text-color;
+}
+
+.input {
+  outline: none;
+}
+
+.button {
+  font-weight: $primary-font-weight;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  letter-spacing: 0.06em;
+
+  border-radius: $primary-border-radius;
+  border: none;
+
+  cursor: pointer;
+
+  color: $primary-white-color;
+  background-color: $accent-color;
+
+  transition: $primary-transition;
+}
+
+@keyframes animation-btn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
