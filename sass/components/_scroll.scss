@@ -1,0 +1,52 @@
+.scroll {
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    position: fixed;
+
+    visibility: hidden;
+    opacity: 0;
+
+    bottom: 26px;
+    right: 30px;
+
+    line-height: 38px;
+    font-size: 46px;
+
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+
+    fill: $accent-color;
+    background-color: $scroll-background-color;
+
+    transition: cubic-bezier(0.3, 0.6, 0.82, 0.75);
+
+    &:hover,
+    &:focus {
+      transform: scale(1.1);
+      background-color: $scroll-increase-background-color;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    bottom: 56px;
+    right: 62px;
+
+    width: 52px;
+    line-height: 50px;
+  }
+}
+
+.scroll-visible {
+  visibility: visible;
+  opacity: 1;
+
+  animation-name: animation-btn;
+  animation-duration: 500ms;
+  animation-timing-function: linear;
+}
+
+.scroll__icon {
+  transform: rotate(-90deg);
+}

@@ -616,6 +616,53 @@ body {
   fill: #ffffff;
 }
 
+.scroll {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .scroll {
+    position: fixed;
+    visibility: hidden;
+    opacity: 0;
+    bottom: 26px;
+    right: 30px;
+    line-height: 38px;
+    font-size: 46px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    fill: #2196f3;
+    background-color: rgba(237, 237, 241, 0.671);
+    transition: cubic-bezier(0.3, 0.6, 0.82, 0.75);
+  }
+  .scroll:hover, .scroll:focus {
+    transform: scale(1.1);
+    background-color: rgba(239, 239, 241, 0.966);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .scroll {
+    bottom: 56px;
+    right: 62px;
+    width: 52px;
+    line-height: 50px;
+  }
+}
+
+.scroll-visible {
+  visibility: visible;
+  opacity: 1;
+  animation-name: animation-btn;
+  animation-duration: 500ms;
+  animation-timing-function: linear;
+}
+
+.scroll__icon {
+  transform: rotate(-90deg);
+}
+
 .header {
   padding-top: 14px;
   padding-bottom: 14px;
@@ -1582,5 +1629,102 @@ body {
   color: #757575;
   font-size: 16px;
   line-height: 1.87;
+}
+
+.contact {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .contact {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+.test {
+  position: relative;
+}
+
+.map {
+  width: 100%;
+  height: 600px;
+  border: 0;
+  border-radius: 10px;
+}
+
+.contact-box {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .contact-box {
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    padding: 30px;
+    border-radius: 20px;
+    background-color: rgba(243, 243, 245, 0.932);
+  }
+}
+
+.contact__title {
+  margin-bottom: 20px;
+}
+
+.contact__title {
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.contact__text {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+}
+
+.contact__text--uppend {
+  margin-bottom: 20px;
+}
+
+.contact__label {
+  margin-bottom: 2px;
+  line-height: 1.5;
+  color: #757575;
+}
+
+.contact__label--prepend {
+  margin-top: 10px;
+}
+
+.contact__link {
+  font-weight: 700;
+}
+
+.contact__link:hover, .contact__link:focus {
+  color: #2196f3;
+}
+
+@media screen and (min-width: 768px) {
+  .contact__link {
+    font-size: 16px;
+  }
+}
+
+.contact__link--uppend {
+  margin-bottom: 20px;
+}
+
+.contact-social__list {
+  display: flex;
+}
+
+.contact-social__item--append {
+  margin-right: 10px;
 }
 /*# sourceMappingURL=main.css.map */
