@@ -183,18 +183,8 @@
 
     <main>
       <section class="section contact">
-        <div class="container">
-          <div class="test">
-            <div class="contact-map" id="map">
-              <iframe
-                class="map"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2541.779267406344!2d30.53619711534605!3d50.426584096965996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf0e033ecbe9%3A0x57a4dffefec77da0!2z0LHRg9C7LiDQm9C10YHQuCDQo9C60YDQsNC40L3QutC4LCAyNiwg0JrQuNC10LIsINCj0LrRgNCw0LjQvdCwLCAwMjAwMA!5e0!3m2!1sru!2ses!4v1648150691061!5m2!1sru!2ses"
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
-              ></iframe>
-            </div>
-
+        <div class="container contact__container">
+          <div class="contact-box__map">
             <div class="contact-box">
               <h1 class="contact__title">Контакты</h1>
               <p class="contact__text">Киев,</p>
@@ -258,9 +248,191 @@
                 </li>
               </ul>
             </div>
+
+            <div class="contact-map" id="map">
+              <iframe
+                class="map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2541.779267406344!2d30.53619711534605!3d50.426584096965996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf0e033ecbe9%3A0x57a4dffefec77da0!2z0LHRg9C7LiDQm9C10YHQuCDQo9C60YDQsNC40L3QutC4LCAyNiwg0JrQuNC10LIsINCj0LrRgNCw0LjQvdCwLCAwMjAwMA!5e0!3m2!1sru!2ses!4v1648150691061!5m2!1sru!2ses"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+
+          <!-- form -->
+
+          <div class="contact-form-container">
+            <p class="contact-form__title">Форма обратной связи</p>
+
+            <form action="contact-form" action="#" autocomplete="off">
+              <div class="contact-form-box contact-form-box--appened">
+                <label class="contact-form__label" for="user-name">Имя</label>
+                <input
+                  class="input contact-form__input"
+                  type="text"
+                  name="user-name"
+                  id="user-name"
+                />
+                <svg class="contact-form__icon" width="12" height="12">
+                  <use href="images/icons.svg#icon-name"></use>
+                </svg>
+              </div>
+
+              <div class="contact-form-box contact-form-box--appened">
+                <label class="contact-form__label" for="user-tel"
+                  >Телефон</label
+                >
+                <input
+                  class="input contact-form__input"
+                  type="tel"
+                  name="user-tel"
+                  id="user-tel"
+                />
+                <svg class="contact-form__icon" width="13" height="13">
+                  <use href="images/icons.svg#icon-tel"></use>
+                </svg>
+              </div>
+
+              <div class="contact-form-box contact-form-box--appened">
+                <label class="contact-form__label" for="user-email"
+                  >Почта</label
+                >
+                <input
+                  class="input contact-form__input"
+                  type="email"
+                  name="user-email"
+                  id="user-email"
+                />
+                <svg class="contact-form__icon" width="15" height="12">
+                  <use href="images/icons.svg#icon-email"></use>
+                </svg>
+              </div>
+
+              <div class="contact-form-box">
+                <label class="contact-form__label" for="user-text"
+                  >Комментарий</label
+                >
+                <textarea
+                  class="input contact-form__input contact-form__textarea contact-form__input--refactoring"
+                  name="user-text"
+                  placeholder="Введите текст"
+                  id="user-text"
+                ></textarea>
+              </div>
+            </form>
           </div>
         </div>
       </section>
     </main>
+
+    <footer class="footer">
+      <div class="container footer__container">
+        <div class="footer-box">
+          <div class="footer-address">
+            <a class="link logo logo--inverse" href="/index.html"
+              ><span class="logo__text logo__text--accent-color">Web</span
+              >Studio</a
+            >
+
+            <address class="footer-address__address">
+              <ul class="list footer-address__list">
+                <li class="footer-address__item footer-address__item--append">
+                  <a
+                    class="link footer-address__link footer-address__link--light-color"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://goo.gl/maps/jbVV8wjMCnb47XMv7"
+                    >г. Киев, пр-т Леси Украинки, 26</a
+                  >
+                </li>
+                <li class="footer-address__item footer-address__item--append">
+                  <a
+                    class="link footer-address__link"
+                    href="mailto:info@example.com"
+                    >info@example.com</a
+                  >
+                </li>
+                <li class="footer-address__item">
+                  <a class="link footer-address__link" href="tel:+380991111111"
+                    >+38 099 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+
+          <div class="footer-social">
+            <p class="footer-social__text">присоединяйтесь</p>
+            <ul class="list footer-social__list">
+              <li class="footer-social__item footer-social__item--append">
+                <a class="footer-social__link" href="">
+                  <svg
+                    class="social-icon footer-social__icon"
+                    width="20"
+                    height="20"
+                  >
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-social__item footer-social__item--append">
+                <a class="footer-social__link" href=""
+                  ><svg
+                    class="social-icon footer-social__icon"
+                    width="20"
+                    height="20"
+                  >
+                    <use href="./images/icons.svg#icon-twitter"></use></svg
+                ></a>
+              </li>
+              <li class="footer-social__item footer-social__item--append">
+                <a class="footer-social__link" href=""
+                  ><svg
+                    class="social-icon footer-social__icon"
+                    width="20"
+                    height="20"
+                  >
+                    <use href="./images/icons.svg#icon-facebook"></use></svg
+                ></a>
+              </li>
+              <li class="footer-social__item">
+                <a class="footer-social__link" href=""
+                  ><svg
+                    class="social-icon footer-social__icon"
+                    width="20"
+                    height="20"
+                  >
+                    <use href="./images/icons.svg#icon-linkedin"></use></svg
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- form -->
+
+        <form class="form" action="#">
+          <div class="footer-form-box footer-form-box--uppend">
+            <div class="footer-form">
+              <p class="footer-form__label">Подпишитесь на рассылку</p>
+              <input
+                class="input footer-form__input"
+                type="email"
+                name="user-send-email"
+                placeholder="E-mail"
+              />
+            </div>
+            <div class="button-box">
+              <button class="button button--styles" type="submit">
+                Подписаться<svg class="button__icon" width="24" height="24">
+                  <use href="images/icons.svg#icon-icon-send"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </footer>
   </body>
 </html>
