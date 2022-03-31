@@ -24,7 +24,6 @@
 }
 
 .modal {
-  z-index: 10;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -32,7 +31,7 @@
   transition: $primary-transition;
 
   width: 90vw;
-  min-height: 609px;
+  min-height: 594px;
 
   padding: 40px;
 
