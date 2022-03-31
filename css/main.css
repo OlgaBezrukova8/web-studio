@@ -1876,6 +1876,7 @@ body {
 
 .contact-form__title {
   margin-bottom: 20px;
+  text-align: center;
   font-weight: bold;
   font-size: 20px;
   line-height: 1.15;
