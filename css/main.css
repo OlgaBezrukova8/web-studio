@@ -746,6 +746,14 @@ body {
   border-bottom: 1px solid #ececec;
 }
 
+.sticky {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  background-color: #ffffff;
+}
+
 .header__container {
   position: relative;
 }

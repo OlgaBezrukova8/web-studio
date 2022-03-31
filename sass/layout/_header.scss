@@ -4,6 +4,13 @@
 
   border-bottom: 1px solid $header-border;
 }
+.sticky {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  background-color: $primary-white-color;
+}
 
 .header__container {
   @extend %flex-align;
