@@ -121,7 +121,7 @@ body {
   align-items: center;
   margin-left: auto;
   margin-right: 8px;
-  z-index: 2;
+  z-index: 3;
   padding: 0;
   border: none;
   background-color: transparent;
@@ -746,7 +746,7 @@ body {
   border-bottom: 1px solid #ececec;
 }
 
-.sticky {
+.header-sticky {
   position: sticky;
   top: 0;
   width: 100%;
