@@ -118,7 +118,7 @@
   font-size: 40px;
   line-height: 1.18;
 
-  letter-spacing: 0.02em;
+  letter-spacing: $menu-letter-spacing;
 
   &:hover,
   &:focus {
@@ -145,7 +145,7 @@
   font-size: 34px;
   line-height: 1.18;
 
-  letter-spacing: 0.02em;
+  letter-spacing: $menu-letter-spacing;
 
   color: $accent-color;
 }
@@ -154,7 +154,7 @@
   font-weight: 500;
   font-size: 24px;
   line-height: 1.17;
-  letter-spacing: 0.02em;
+  letter-spacing: $menu-letter-spacing;
 
   color: $paragraph-color;
 }
@@ -180,7 +180,7 @@
   font-weight: 500;
   font-size: 18px;
   line-height: 1.22;
-  letter-spacing: 0.02em;
+  letter-spacing: $menu-letter-spacing;
 
   color: $accent-color;
 
