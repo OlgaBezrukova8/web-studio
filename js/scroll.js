@@ -1,14 +1,14 @@
-const scrollToTopBtn = document.getElementById("scrollToTopBtn");
-const rootElement = document.documentElement;
+const scrollToTopBtn = document.querySelector("#scrollToTopBtn");
+
+scrollToTopBtn.addEventListener("click", scrollToTop);
+window.addEventListener("scroll", scrollEvent);
 
 function scrollToTop() {
-  rootElement.scrollTo({
+  window.scrollTo({
     top: 0,
     behavior: "smooth",
   });
 }
-
-scrollToTopBtn.addEventListener("click", scrollToTop);
 
 function scrollEvent() {
   if (window.pageYOffset > 300) {
@@ -17,5 +17,3 @@ function scrollEvent() {
     scrollToTopBtn.classList.remove("scroll-visible");
   }
 }
-
-window.addEventListener("scroll", scrollEvent);
