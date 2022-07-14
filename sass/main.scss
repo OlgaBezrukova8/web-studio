@@ -5,16 +5,12 @@
 @import "./utils/hidden";
 @import "./utils/placeholders";
 
-// COMPONENTS
-
 @import "./components/container";
 @import "./components/mobile-menu";
 @import "./components/modal";
 
 @import "./components/footer-form";
 @import "./components/scroll";
-
-// LAYOUT
 
 @import "./layout/header";
 @import "./layout/hero";
@@ -23,8 +19,6 @@
 @import "./layout/team";
 @import "./layout/clients";
 @import "./layout/footer";
-
-// page portfolio
 
 @import "./layout/portfolio";
 
