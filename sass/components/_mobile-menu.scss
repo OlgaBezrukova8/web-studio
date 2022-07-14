@@ -16,23 +16,6 @@
   }
 }
 
-// .menu-close__button {
-//   display: block;
-//   align-items: center;
-//   margin-left: auto;
-
-//   // z-index: 2;
-
-//   padding: 0;
-
-//   border: none;
-//   background-color: transparent;
-
-//   @media screen and (min-width: 768px) {
-//     display: none;
-//   }
-// }
-
 .button-icon {
   transition: $primary-transition;
 
@@ -66,7 +49,6 @@
   top: 0;
   left: 0;
 
-  // TO DO: create variables z-index - low, medium, high
   z-index: 1;
 
   height: 70%;
@@ -84,7 +66,6 @@
 
 .mobile-menu.is-open {
   display: none;
-  //position: fixed;
   top: 0;
 }
 
@@ -202,7 +183,7 @@
     width: 22px;
     height: 0;
 
-    border: 1px solid rgba(33, 33, 33, 0.2);
+    border: 1px solid $input-border-color;
     transform: rotate(90deg);
 
     transition: $primary-transition;

@@ -21,7 +21,7 @@
     fill: $accent-color;
     background-color: $scroll-background-color;
 
-    transition: cubic-bezier(0.3, 0.6, 0.82, 0.75);
+    transition: $scroll-transition;
 
     &:hover,
     &:focus {

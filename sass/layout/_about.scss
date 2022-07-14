@@ -1,6 +1,4 @@
 .about {
-  // padding-top: 94px;
-  // padding-bottom: 94px;
   padding-top: 60px;
   padding-bottom: 60px;
 
@@ -11,8 +9,6 @@
 }
 
 .about__list {
-  // display: flex;
-  // justify-content: space-between;
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
@@ -42,26 +38,11 @@
   }
 }
 
-// .about__item--append {
-//   @media screen and (min-width: 1200px) {
-//     margin-right: 30px;
-//   }
-// }
-
-// .about__item--preperend {
-//   @media screen and (min-width: 1200px) {
-//     margin-right: 0;
-//   }
-// }
-
 .svg-box {
   @extend %flex-align;
   justify-content: center;
 
   margin-bottom: 30px;
-
-  // width: 270px;
-  // height: 120px;
 
   width: 100%;
   height: 120px;

@@ -1,4 +1,3 @@
-@charset "UTF-8";
 p,
 h1,
 h2,
@@ -85,7 +84,7 @@ body {
   clip: rect(0 0 0 0);
 }
 
-.contact-social__link, .footer-social__item, .footer-social__link, .clients__link, .social-networks__link, .svg-box, .contacts__link, .nav, .header__container, .button--styles, .form-checkbox, .modal-close {
+.contact-social__link, .footer-social__item, .footer-social__link, .clients__link, .clients__list, .social-networks__link, .svg-box, .contacts__link, .nav, .header__container, .button--styles, .form-checkbox, .modal-close {
   display: flex;
   align-items: center;
 }
@@ -296,12 +295,10 @@ body {
   width: 90vw;
   min-height: 594px;
   padding: 40px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   animation-name: animation-btn;
   animation-duration: 1500ms;
   animation-timing-function: linear;
-  /* animation-iteration-count: 1; */
   background-color: #ffffff;
 }
 @media screen and (min-width: 480px) {
@@ -369,11 +366,6 @@ body {
   position: relative;
 }
 
-/* меняем цвет бордера при фокусе в поле формы (2 способ)
-
-.modal-form__box:focus-within > .form-input {
-  border: 1px solid $accent-color;
-} */
 .modal-form__label {
   display: block;
   margin-bottom: 4px;
@@ -404,7 +396,6 @@ body {
   fill: #2196f3;
 }
 
-/* при фокусе иконка меняет цвет (выбираются все классы form-icon) */
 .modal-form__input--refactoring {
   resize: none;
   width: 100%;
@@ -601,10 +592,8 @@ body {
 }
 
 .footer-form__input {
-  padding-top: 15px;
-  padding-left: 16px;
-  padding-bottom: 15px;
   margin-bottom: 20px;
+  padding: 15px 0px 16px 15px;
   width: 100%;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -671,7 +660,7 @@ body {
     cursor: pointer;
     fill: #2196f3;
     background-color: rgba(237, 237, 241, 0.671);
-    transition: cubic-bezier(0.3, 0.6, 0.82, 0.75);
+    transition: 250ms cubic-bezier(0.3, 0.6, 0.82, 0.75);
   }
   .scroll:hover, .scroll:focus {
     transform: scale(1.1);
@@ -1215,8 +1204,6 @@ body {
 }
 
 .clients__list {
-  display: flex;
-  align-items: center;
   justify-content: space-between;
   margin-left: -30px;
   margin-bottom: -30px;
@@ -1478,9 +1465,10 @@ body {
 
 .portfolio-filter__button {
   padding: 6px 22px;
-  font-weight: 500;
   font-size: 16px;
+  font-weight: 500;
   line-height: 1.62;
+  letter-spacing: 0em;
   border-width: 0px;
   border-radius: 4px;
   color: #212121;
@@ -1602,8 +1590,8 @@ body {
 
 .portfolio__name {
   margin-bottom: 4px;
-  font-weight: bold;
   font-size: 18px;
+  font-weight: bold;
   line-height: 2;
   letter-spacing: 0.06em;
 }
