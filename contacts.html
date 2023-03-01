@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Студия</title>
+    <title>Studio</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
@@ -32,16 +32,16 @@
 
           <ul class="list nav__list">
             <li class="nav__item">
-              <a class="link nav__link" href="./index.html">Студия</a>
+              <a class="link nav__link" href="./index.html">Studio</a>
             </li>
             <li class="nav__item">
-              <a class="link nav__link" href="./portfolio.html">Портфолио</a>
+              <a class="link nav__link" href="./portfolio.html">Portfolio</a>
             </li>
             <li class="nav__item">
               <a
                 class="link nav__link nav__link--overlay"
                 href="./contacts.html"
-                >Контакты</a
+                >Contacts</a
               >
             </li>
           </ul>
@@ -70,11 +70,7 @@
           aria-expanded="false"
           data-menu-button
         >
-          <svg
-            width="20px"
-            height="20px"
-            aria-label="Переключатель мобильного меню"
-          >
+          <svg width="20px" height="20px" aria-label="Mobile menu switch">
             <use
               class="button-icon icon-menu"
               href="./images/icons.svg#icon-menu"
@@ -93,18 +89,18 @@
           <div class="mobile-menu-box">
             <ul class="list menu-nav__list">
               <li class="menu-nav__item">
-                <a class="link menu-nav__link" href="./index.html">Студия</a>
+                <a class="link menu-nav__link" href="./index.html">Studio</a>
               </li>
               <li class="menu-nav__item">
                 <a class="link menu-nav__link" href="./portfolio.html"
-                  >Портфолио</a
+                  >Portfolio</a
                 >
               </li>
               <li class="menu-nav__item">
                 <a
                   class="link menu-nav__link menu-nav__link--active"
                   href="./contacts.html"
-                  >Контакты</a
+                  >Contacts</a
                 >
               </li>
             </ul>
@@ -174,18 +170,18 @@
         <div class="container contact__container">
           <div class="contact-box__map">
             <div class="contact-box">
-              <h1 class="contact__title">Контакты</h1>
-              <p class="contact__text">Киев,</p>
+              <h1 class="contact__title">Contacts</h1>
+              <p class="contact__text">Kiev,</p>
               <p class="contact__text contact__text--uppend">
-                проспект Леси Украинки 26
+                Lesi Ukrainky Blvd, 26
               </p>
 
-              <p class="contact__label">Телефон</p>
+              <p class="contact__label">Phone</p>
               <a class="link contact__link" href="tel:+380961111111">
                 +38 096 111 11 11</a
               >
 
-              <p class="contact__label contact__label--prepend">Почта</p>
+              <p class="contact__label contact__label--prepend">Email</p>
               <a
                 class="link contact__link contact__link--uppend"
                 href="mailto:info@devstudio.com"
@@ -253,7 +249,7 @@
             <div class="contact-map" id="map">
               <iframe
                 class="map"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2541.779267406344!2d30.53619711534605!3d50.426584096965996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf0e033ecbe9%3A0x57a4dffefec77da0!2z0LHRg9C7LiDQm9C10YHQuCDQo9C60YDQsNC40L3QutC4LCAyNiwg0JrQuNC10LIsINCj0LrRgNCw0LjQvdCwLCAwMjAwMA!5e0!3m2!1sru!2ses!4v1648150691061!5m2!1sru!2ses"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2541.779267406348!2d30.536197115309132!3d50.42658409696592!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf0e033ecbe9%3A0x57a4dffefec77da0!2sLesi%20Ukrainky%20Blvd%2C%2026%2C%20Kyiv%2C%20Ukraine%2C%2002000!5e0!3m2!1sen!2sca!4v1677708497095!5m2!1sen!2sca"
                 allowfullscreen=""
                 loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"
@@ -262,11 +258,11 @@
           </div>
 
           <div class="contact-form-container">
-            <p class="contact-form__title">Форма обратной связи</p>
+            <p class="contact-form__title">Contact Us</p>
 
             <form action="contact-form" autocomplete="off">
               <div class="contact-form-box contact-form-box--appened">
-                <label class="contact-form__label" for="user-name">Имя</label>
+                <label class="contact-form__label" for="user-name">Name</label>
                 <input
                   class="input contact-form__input"
                   type="text"
@@ -279,9 +275,7 @@
               </div>
 
               <div class="contact-form-box contact-form-box--appened">
-                <label class="contact-form__label" for="user-tel"
-                  >Телефон</label
-                >
+                <label class="contact-form__label" for="user-tel">Phone</label>
                 <input
                   class="input contact-form__input"
                   type="tel"
@@ -295,7 +289,7 @@
 
               <div class="contact-form-box contact-form-box--appened">
                 <label class="contact-form__label" for="user-email"
-                  >Почта</label
+                  >Email</label
                 >
                 <input
                   class="input contact-form__input"
@@ -310,12 +304,12 @@
 
               <div class="contact-form-box">
                 <label class="contact-form__label" for="user-text"
-                  >Комментарий</label
+                  >Comment</label
                 >
                 <textarea
                   class="input contact-form__input contact-form__textarea contact-form__input--refactoring"
                   name="user-text"
-                  placeholder="Введите текст"
+                  placeholder="Enter text"
                   id="user-text"
                 ></textarea>
               </div>
@@ -324,7 +318,7 @@
                 class="button button__submit contact-form__button"
                 type="submit"
               >
-                Отправить
+                Send
               </button>
             </form>
           </div>
@@ -348,8 +342,8 @@
                     class="link footer-address__link footer-address__link--light-color"
                     target="_blank"
                     rel="noopener noreferrer"
-                    href="https://goo.gl/maps/jbVV8wjMCnb47XMv7"
-                    >г. Киев, пр-т Леси Украинки, 26</a
+                    href="https://goo.gl/maps/ycLUVsV3GkbjtEav9"
+                    >Kiev, Lesi Ukrainky Blvd, 26</a
                   >
                 </li>
                 <li class="footer-address__item footer-address__item--append">
@@ -369,7 +363,7 @@
           </div>
 
           <div class="footer-social">
-            <p class="footer-social__text">присоединяйтесь</p>
+            <p class="footer-social__text">Join to us</p>
             <ul class="list footer-social__list">
               <li class="footer-social__item footer-social__item--append">
                 <a
@@ -432,7 +426,7 @@
         <form class="form" action="#">
           <div class="footer-form-box footer-form-box--uppend">
             <div class="footer-form">
-              <p class="footer-form__label">Подпишитесь на рассылку</p>
+              <p class="footer-form__label">Subscribe to the newsletter</p>
               <input
                 class="input footer-form__input"
                 type="email"
@@ -442,7 +436,7 @@
             </div>
             <div class="button-box">
               <button class="button button--styles" type="submit">
-                Подписаться<svg class="button__icon" width="24" height="24">
+                Subscribe<svg class="button__icon" width="24" height="24">
                   <use href="images/icons.svg#icon-icon-send"></use>
                 </svg>
               </button>
